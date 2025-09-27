@@ -1,13 +1,12 @@
 # 🎮 Vision Forge – Gamified Learning Platform (SIH25048)
 
-## 📌 Problem Statement  
+## Problem Statement  
 Students in rural India face two big challenges:  
 - **Engagement Gap** → Existing e-learning apps are text-heavy and boring.  
 - **Connectivity Gap** → Weak or no internet prevents access to interactive EdTech solutions.  
 
----
 
-## 💡 Our Solution  
+## Our Solution  
 A **2D village-style metaverse learning platform** where students study by playing:  
 - **School** → Subject-wise quizzes, puzzles & story-based challenges.  
 - **Arcade** → Multiplayer mini-games & peer-to-peer quizzes.  
@@ -18,7 +17,7 @@ A **2D village-style metaverse learning platform** where students study by playi
 
 ---
 
-## 🚀 Key Innovations  
+## Key Innovations  
 1. **AI-Driven Student Analysis & Level System**  
    - AI finds weak areas → assigns personalized difficulty & levels.  
 
@@ -42,7 +41,7 @@ A **2D village-style metaverse learning platform** where students study by playi
 
 ---
 
-## 📊 System Architecture  
+## System Architecture  
 ![System Architecture Diagram](Docs/system_architecture.png)  
 
 ---
@@ -56,20 +55,20 @@ A **2D village-style metaverse learning platform** where students study by playi
 
 ---
 
-## 🎥 Demo Video  
+## Demo Video  
 [![Watch the Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)  
 *(Click to play demo on YouTube)*  
 
 ---
 
-## 📸 Screenshots & Mockups  
+## Screenshots & Mockups  
 | Student Village | Teacher Dashboard | Library | Leaderboard |  
 |-----------------|-------------------|---------|-------------|  
 | ![](docs/village.png) | ![](docs/teacher_dashboard.png) | ![](docs/library.png) | ![](docs/leaderboard.png) |  
 
 ---
 
-## 📈 Feasibility  
+## Feasibility  
 - **Lightweight (120–150 MB per class)** → works on 2GB RAM phones.  
 - **Offline-first** → only leaderboards & sync need internet.  
 - **Low-cost** → open-source stack, minimal cloud usage.  
@@ -77,7 +76,7 @@ A **2D village-style metaverse learning platform** where students study by playi
 
 ---
 
-## 🌍 Impact  
+## Impact  
 - **Social** → boosts engagement, collaboration, and teacher-student-parent ecosystem.  
 - **Economic** → zero extra hardware, scalable via CSR & Govt. programs.  
 - **Educational** → AI-driven personalization, inclusive multilingual content.  
@@ -85,7 +84,7 @@ A **2D village-style metaverse learning platform** where students study by playi
 
 ---
 
-## 👥 Team – Vision Forge  
+## Team – Vision Forge  
 - Jiya Singh
 - Aaryansh Singh
 - Abhijit Manoj
