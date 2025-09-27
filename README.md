@@ -43,7 +43,7 @@ A **2D village-style metaverse learning platform** where students study by playi
 ---
 
 ## 📊 System Architecture  
-![System Architecture Diagram](docs/system_architecture.png)  
+![System Architecture Diagram](Docs/system_architecture.png)  
 
 ---
 
