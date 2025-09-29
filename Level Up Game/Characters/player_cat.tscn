@@ -233,9 +233,9 @@ advance_mode = 2
 advance_condition = &"idle"
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_428uj"]
-states/End/position = Vector2(900, 100.078)
+states/End/position = Vector2(900, 99.9934)
 states/Idle/node = SubResource("AnimationNodeBlendSpace2D_5yx10")
-states/Idle/position = Vector2(389.615, 99.9812)
+states/Idle/position = Vector2(389.615, 99.9873)
 states/Start/position = Vector2(200, 100.03)
 states/Walk/node = SubResource("AnimationNodeBlendSpace2D_3b306")
 states/Walk/position = Vector2(537.615, 100.377)
