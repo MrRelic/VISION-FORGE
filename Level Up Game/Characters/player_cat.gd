@@ -1,37 +1,44 @@
 extends CharacterBody2D
+class_name PlayerController
 
-@export var move_speed : float = 100
-@export var starting_direction : Vector2 = Vector2(0,1)
+@export var move_speed = 20.0
+@export var sprint_increase = 1.5
 
+var direction : Vector2
+var sprinting = false
+var sprint_multiplier = 1.0
 
-@onready var animation_tree : AnimationTree = $AnimationTree
+enum Facing {UP, DOWN, LEFT, RIGHT}
+var player_facing : Facing
 
-func _ready():
-	animation_tree.set("parameters/Idle/blend_position", starting_direction)
-	
-func _process(delta):
-	update_animation_parameters()
-
-func _physics_process(_delta):
-	# Get Input Directions
-	var input_direction = Vector2(
-		Input.get_action_strength("right") - Input.get_action_strength("left"),
-		Input.get_action_strength("down") - Input.get_action_strength("up")
-	)
-	
-	print(input_direction)
-	
-	# Update velocity
-	velocity = input_direction * move_speed
-	
-	# Move and Slide function uses velocity of character body to move character on map
-	move_and_slide()
-
-# Character animation ideal and walking
-func update_animation_parameters():
-	if(velocity == Vector2.ZERO):
-		animation_tree["parameters/conditions/idle"] = true
-		animation_tree["parameters/conditions/is_moving"] = false
+func _physics_process(delta):
+	# Sets the y value of the player input
+	if Input.is_action_pressed("move_up"):
+		direction.y = -1
+		player_facing = Facing.UP
+	elif Input.is_action_pressed("move_down"):
+		direction.y = 1
+		player_facing = Facing.DOWN
 	else:
-		animation_tree["parameters/conditions/idle"] = false
-		animation_tree["parameters/conditions/is_moving"] = true
+		direction.y = 0
+	# Sets the x value of the player input
+	if Input.is_action_pressed("move_right"):
+		direction.x = 1
+		player_facing = Facing.RIGHT
+	elif Input.is_action_pressed("move_left"):
+		direction.x = -1
+		player_facing = Facing.LEFT
+	else:
+		direction.x = 0
+	
+	if Input.is_action_pressed("sprint"):
+		sprint_multiplier = sprint_increase
+		sprinting = true
+	else:
+		sprint_multiplier = 1.0
+		sprinting = false
+	
+	
+	direction = direction.normalized()
+	velocity = direction *  move_speed * delta * 200 * sprint_multiplier
+	move_and_slide()
