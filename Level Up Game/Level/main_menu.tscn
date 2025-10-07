@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://dupauo3pcx402"]
+[gd_scene load_steps=11 format=3 uid="uid://dupauo3pcx402"]
 
 [ext_resource type="Script" uid="uid://c8skqjh1sh3ki" path="res://main_menu.gd" id="1_opg7c"]
 [ext_resource type="Texture2D" uid="uid://b675oy4cwvo2r" path="res://Scene/Screenshot 2025-09-29 at 12.43.23 AM.png" id="2_qvt0h"]
 [ext_resource type="FontFile" uid="uid://ckn6w1cpf5tle" path="res://Font/GrapeSoda.ttf" id="3_ph8w5"]
+[ext_resource type="Texture2D" uid="uid://bmdk6yg4y7trc" path="res://Art/Tiny Swords (Update 010)/UI/Ribbons/Ribbon_Blue_3Slides.png" id="3_qitl6"]
+[ext_resource type="FontFile" uid="uid://bmdckq3fka0dc" path="res://Font/RETROTECH.ttf" id="4_qvt0h"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qitl6"]
 texture = ExtResource("2_qvt0h")
@@ -64,13 +66,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -360.0
-offset_top = -154.5
-offset_right = 360.0
-offset_bottom = 154.5
+offset_left = -319.0
+offset_top = -93.0
+offset_right = 401.0
+offset_bottom = 216.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 8
+
+[node name="RibbonBlue3Slides" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(377, -213)
+scale = Vector2(5.39844, 4.21094)
+texture = ExtResource("3_qitl6")
 
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -121,19 +128,18 @@ text = "Exit"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.094
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -228.0
-offset_top = -401.0
-offset_right = 228.0
-offset_bottom = -249.0
+anchor_bottom = 0.094
+offset_left = -265.0
+offset_top = 15.48
+offset_right = 385.0
+offset_bottom = 219.48
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("3_ph8w5")
-theme_override_font_sizes/font_size = 120
+theme_override_fonts/font = ExtResource("4_qvt0h")
+theme_override_font_sizes/font_size = 140
 text = "Level Up"
 horizontal_alignment = 1
 vertical_alignment = 1
