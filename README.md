@@ -57,7 +57,7 @@ A **2D village-style metaverse learning platform** where students study by playi
 ---
 
 ## 🎥 Demo Video  
-[![Watch the Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)  
+[![Watch the Video](Docs/Team_Logo.png)](https://www.youtube.com/playlist?list=PLwXbeYnh3HuBPyT0FgD1DQkvMWo_reHNn)  
 *(Click to play demo on YouTube)*  
 
 ---
